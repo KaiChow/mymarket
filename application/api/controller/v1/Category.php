@@ -2,10 +2,11 @@
 
 namespace app\api\controller\v1;
 
-use think\Controller;
+use app\api\controller\BaseController;
+
 use think\Request;
 
-class Category extends Controller
+class Category extends BaseController
 {
     /**
      * 显示资源列表

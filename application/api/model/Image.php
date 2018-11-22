@@ -2,16 +2,15 @@
 
 namespace app\api\model;
 
+use think\Model;
 
 class Image extends BaseModel
 {
-    //
-    protected  $hidden = ['update_time','delete_time'];
-    public function getUrlAttr($val)
-    {
-        if( $val ){
+    protected $hidden = ['delete_time', 'id', 'from'];
 
-        }
-        return 'wwww.baidu.com/img'.$val;
+    public function getUrlAttr($value, $data)
+    {
+        return $this->prefixImgUrl($value, $data);
     }
 }
+

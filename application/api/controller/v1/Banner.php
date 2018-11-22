@@ -8,9 +8,10 @@
 
 namespace app\api\controller\v1;
 
+use app\api\controller\BaseController;
 use app\api\model\Banner as BannerModel;
 
-class Banner extends Base
+class Banner extends BaseController
 {
     public function getBanner()
     {

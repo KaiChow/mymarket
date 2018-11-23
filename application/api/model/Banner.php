@@ -1,18 +1,27 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Kevin
+ * Date: 2018/11/23
+ * Time: 16:46
+ */
 
 namespace app\api\model;
 
 
-class Banner extends BaseModel
-{
-    protected  $hidden = ['update_time','delete_time'];
-    public function items()
-    {
-        return $this->hasMany('BannerItem', 'banner_id', 'id');
-    }
+use app\api\exception\MissException;
+use think\Model;
 
+class Banner extends Model
+{
     public static function getBannerByID($id)
     {
-        return self::with(['items', 'items.img'])->select($id);
+        $banner = self::get($id);
+
+        if(!$banner){
+            throw new MissException();
+        }
+        return $banner;
     }
+
 }

@@ -6,7 +6,7 @@
  * Time: 1:03
  */
 
-namespace app\lib\exception;
+namespace app\api\exception;
 
 /**
  * token验证失败时抛出此异常 

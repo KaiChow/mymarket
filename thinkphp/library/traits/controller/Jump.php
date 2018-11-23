@@ -2,10 +2,10 @@
 
 /**
  * 用法：
- * class api
+ * class index
  * {
  *     use \traits\controller\Jump;
- *     public function api(){
+ *     public function index(){
  *         $this->error();
  *         $this->redirect();
  *     }

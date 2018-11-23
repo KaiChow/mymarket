@@ -6,7 +6,7 @@
  * Time: 18:29
  */
 
-namespace app\lib\exception;
+namespace app\api\exception;
 
 /**
  * Class ParameterException

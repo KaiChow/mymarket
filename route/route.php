@@ -12,7 +12,7 @@
 use think\facade\Route;
 
 //Route::get('api/:name', 'index/hello');
-Route::get('api/banner', 'api/Banner/getBanner');
+Route::get('api/:version/banner', 'api/:version.Banner/getBanner');
 
 return [
 

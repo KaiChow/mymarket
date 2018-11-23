@@ -6,14 +6,14 @@
  * Time: 16:36
  */
 
-namespace app\api\controller;
+namespace app\api\controller\v1;
   
 
+use app\api\controller\BaseController;
 use app\api\validate\IDMustBePositiveInt;
-use think\Controller;
 use app\api\model\Banner as BannerModel;
 
-class Banner extends Controller
+class Banner extends BaseController
 {
     public function getBanner()
     {

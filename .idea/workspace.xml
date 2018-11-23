@@ -2,73 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97dff8bc-f3f9-455e-b98c-839f91b6a70f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/api/controller/BaseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/api/controller/v1/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1@theme-head.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1@theme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/2@theme-head.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/2@theme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/3@theme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/banner-1a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/banner-2a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/banner-3a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/banner-4a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/category-cake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/category-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/category-fry-a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/category-rice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/category-tea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/category-vg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-10@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-11@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-12@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-13@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-1@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-2@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-3@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-4@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-5@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-6@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-7@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-8@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/detail-9@1-dryfruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-cake-a@3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-cake-a@4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-cake@1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-cake@2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-dryfruit-a@6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-dryfruit@1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-dryfruit@2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-dryfruit@3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-dryfruit@4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-dryfruit@5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-dryfruit@7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-dryfruit@8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-fry@1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-fry@2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-fry@3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-fry@4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-fry@5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-rice@1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-rice@2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-rice@3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-rice@4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-rice@5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-rice@6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-rice@7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-tea@1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-tea@2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-tea@3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-vg@1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-vg@2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-vg@3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-vg@4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product-vg@5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/Banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/v1/Banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/model/Banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/Banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/route/route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/model/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/Image.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,7 +15,17 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Image.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/api/model/Image.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -156,6 +100,26 @@
             <path>
               <item name="shopping-mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopping-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping-mall" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,15 +182,16 @@
       <workItem from="1542879946153" duration="233000" />
       <workItem from="1542960949373" duration="225000" />
       <workItem from="1542968834615" duration="1167000" />
-      <workItem from="1542977694131" duration="1951000" />
+      <workItem from="1542977694131" duration="2330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12506000" />
+    <option name="totallyTimeSpent" value="12885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2254902" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -425,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/model/Image.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        <state relative-caret-position="360">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

@@ -2,84 +2,44 @@
 
 namespace app\api\controller\v1;
 
-use think\Controller;
-use think\Request;
+use app\api\controller\BaseController;
+use app\api\exception\MissException;
+use app\api\validate\Count;
 
-class Product extends Controller
+use app\api\model\Product as ProductModel;
+use think\Collection;
+
+
+class Product extends BaseController
 {
     /**
      * 显示资源列表
      *
      * @return \think\Response
      */
-    public function index()
+    public function getProductRecent($count = 15)
     {
-        //
+        (new Count())->goCheck();
+        $products = ProductModel::getMostRecent($count);
+        if ($products->isEmpty()) {
+            throw new MissException();
+        }
+        //此处没有使用成collection，后期补上--！！！！  在database设置里返回类型为collection
+        $result = $products->hidden(['summary']);
+
+        return $result;
     }
 
-    /**
-     * 显示创建资源表单页.
-     *
-     * @return \think\Response
-     */
-    public function create()
+    public function getAllInCategory($id)
     {
-        //
+        $products = ProductModel::getProductByCategoryID($id);
+        if ($products->isEmpty()) {
+            throw new MissException();
+        }
+
+        return $products;
+
     }
 
-    /**
-     * 保存新建的资源
-     *
-     * @param  \think\Request  $request
-     * @return \think\Response
-     */
-    public function save(Request $request)
-    {
-        //
-    }
 
-    /**
-     * 显示指定的资源
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function read($id)
-    {
-        //
-    }
-
-    /**
-     * 显示编辑资源表单页.
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * 保存更新的资源
-     *
-     * @param  \think\Request  $request
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * 删除指定资源
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function delete($id)
-    {
-        //
-    }
 }

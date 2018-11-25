@@ -143,6 +143,13 @@ return [
     // 异常处理handle类 留空使用 \think\exception\Handle  api/exception/ExceptionHandler.php
     'exception_handle' => 'app\api\exception\ExceptionHandler',
     //临时配置的图片地址
-    'img_prefix' => 'http://z.cn/images'
+    'img_prefix' => 'http://z.cn/images',
+    //盐的信息
+    'token_salt' => 'BYUGNinINBuUbuygkmoiMN',
+    'token_expire_in' => 7200,
+    //微信小程序的配置信息
+    'app_id' => 'wx8890c3b2833a174f',
+    'app_secret' => '3bde644b850fb30ec23d6091242ca525',
+    'login_url' => 'https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code'
 
 ];

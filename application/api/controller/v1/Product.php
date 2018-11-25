@@ -7,6 +7,7 @@ use app\api\exception\MissException;
 use app\api\validate\Count;
 
 use app\api\model\Product as ProductModel;
+use app\api\validate\IDMustBePositiveInt;
 use think\Collection;
 
 
@@ -39,6 +40,17 @@ class Product extends BaseController
 
         return $products;
 
+    }
+
+    public function getOne($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+
+        $product = ProductModel::getProductDetails($id);
+        if (empty($product)) {
+            throw new MissException();
+        }
+        return $product;
     }
 
 

@@ -109,7 +109,8 @@ class UserToken extends Token
     {
         $value = $wxResult;
         $value['uid'] = $uid;
-        $value['scope'] = 16;
+        //  16  ==app用户权限  32==CMS（管理员权限）
+        $value['scope'] = \ScopeEnum::User;
         return $value;
     }
 

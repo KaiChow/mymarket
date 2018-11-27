@@ -11,6 +11,8 @@ namespace app\api\controller\v1;
 
 
 use app\api\controller\BaseController;
+use app\api\exception\ForbiddenException;
+use app\api\exception\TokenException;
 use app\api\model\User as UserModel;
 use app\api\model\UserAddress;
 use app\api\service\Token as TokenService;
@@ -20,20 +22,37 @@ use app\api\exception\UserException;
 
 class Address extends BaseController
 {
+    //前置方法，在执行getUserAddress和createOrUpdateAddress之前，要执行checkPrimaryScope方法
     protected $beforeActionList = [
         'checkPrimaryScope' => ['only' => 'getUserAddress,createOrUpdateAddress']
     ];
+
+    public function checkPrimaryScope()
+    {
+        $scope = TokenService::getCurrentTokenVar('scope');
+
+        if($scope){
+            if($scope>=\ScopeEnum::User){
+                return true;
+            }else {
+                throw new ForbiddenException();
+            }
+        }else{
+            throw new TokenException();
+        }
+    }
 
     /**
      * 获取用户地址信息
      * @return UserAddress
      * @throws UserException
      */
-    public function getUserAddress(){
+    public function getUserAddress()
+    {
         $uid = TokenService::getCurrentUid();
         $userAddress = UserAddress::where('user_id', $uid)
             ->find();
-        if(!$userAddress){
+        if (!$userAddress) {
             throw new UserException([
                 'msg' => '用户地址不存在',
                 'errorCode' => 60001
@@ -42,7 +61,8 @@ class Address extends BaseController
         return $userAddress;
     }
 
-    public function createOrUpdateAddress(){
+    public function createOrUpdateAddress()
+    {
         $validate = new AddressNew();
         $validate->goCheck();
         // 根据Token来获取uid
@@ -52,18 +72,18 @@ class Address extends BaseController
 
         $uid = TokenService::getCurrentUid();
         $user = UserModel::get($uid);
-        if (!$user){
+        if (!$user) {
             throw new UserException();
         }
 
         $dataArray = $validate->getDataByRule(input('post.'));
 
         $userAddress = $user->address;
-        if (!$userAddress){
+        if (!$userAddress) {
             $user->address()->save($dataArray);
-        }else{
+        } else {
             $user->address->save($dataArray);
         }
-        return json(new SuccessMessage(),201);
+        return json(new SuccessMessage(), 201);
     }
 }
